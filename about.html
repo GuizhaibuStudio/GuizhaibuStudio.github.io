@@ -1,243 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>关于我们</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #04AA6D;
-}
-* {
-    box-sizing: border-box;
-}
-
-
-/* 导航栏样式 */
-.navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-/* 右侧链接*/
-.navbar a.right {
-    float: right;
-}
-
-/* 鼠标移动到链接的颜色 */
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-/* 列容器 */
-.row {  
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-}
-
-/* 创建两个列 */
-/* 边栏 */
-.side {
-    -ms-flex: 30%; /* IE10 */
-    flex: 30%;
-    background-color: #f1f1f1;
-    padding: 20px;
-}
-
-/* 主要的内容区域 */
-.main {   
-    -ms-flex: 70%; /* IE10 */
-    flex: 70%;
-    background-color: white;
-    padding: 20px;
-}
-
-/* 测试图片 */
-.fakeimg {
-    
-    width: 100%;
-    padding: 20px;
-}
-
-/* 底部 */
-.footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-}
-
-/* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
-@media screen and (max-width: 700px) {
-    .row {   
-        flex-direction: column;
-    }
-}
-
-/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
-@media screen and (max-width: 400px) {
-    .navbar a {
-        float: none;
-        width: 100%;
-    }
-}
-#header {
-    background: lightblue;
-    text-align:center;
-    padding:20px;
-    
-}
-</style>
+	<title>Go kart lover's club</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
-<body>
+
+
+<body onload="buttonFunction()">
   <ul>
-    <li><a href="index.html">主页</a></li>
-    <li><a href="Announcement.html">公告</a></li>
-    <li><a href="Contact.html">联系我们</a></li>
-    <li style="float:right"><a class="active" href="about.html">关于</a></li>
+    <li><a href="index.html" onclick="alertFunction()">Home</a></li>
+    <li><a href="History&Competition.html" onclick="alertFunction()">History&Competitions</a></li>
+    <li><a href=" " onclick="alertFunction()">Come back soon</a></li>
+    <li style="float:right"><a class="active" href="About.html" onclick="alertFunction()">About</a></li>
   </ul>
-
-<div id="header">
+	<center>
+	<font size="10"><p style="color: white;">Our club</p></font>
+  
+	<img onmouseover="smallImg(this)" onmouseout="normalImg(this)" border="0" src="https://www.k1speed.ca/wp-content/uploads/2019/01/arrive-and-drive.jpg">
+ 	<hr>
+	
+	<div id="header">
 <div class="row">
   <div class="side">
-      <h1>听月聆风CphoebeTR</h1>
-      <h5>我的照片:</h5>
+      <h1>Peter</h1>
+      <h5>My photo:</h5>
       <div class="fakeimg" style="height:200px;"><img src="123.png" height='180px' width='200px' ></div>
-      <p>咕咕咕和脑洞担当</p>
+      <p>Don't know what to say....so.....have a great day.</p>
       
   </div>
   <div class="main">
-      <h2>社长</h2>
-      <h3>工作室的 “领头羊”，爱好唱歌以及画画</h3>
-      <p>
-  个人社交账号：<br>
-  Twitter: 神隐少女听月月酱（@phoebe073103）<br> 
-  Youtube：神隐少女听月月酱 <br>
-  Bilibili：神隐少女听月月酱（UID：385512172）<br> 
-  </p>
-  </div>
-</div>
-
-<div class="footer">
-  <h2>归宅部工作室</h2>
-</div>
-</div>
-
-
-<div id="header">
-<div class="row">
-  <div class="side">
-      <h1>wxqing</h1>
-      <h5>我的照片:</h5>
-      <div class="fakeimg" style="height:200px;"><img src="123.png" height='180px' width='200px' ></div>
-      <p>兴趣使然的编辑一只！</p>
+      <h2>Chairman</h2>
       
-  </div>
-  <div class="main">
-      <h2>编辑</h2>
-      <h3>诶你们好，我叫wxqing，我也常来这里玩，他们都叫我小晴晴。我一个人住，我的房子还蛮大的，欢迎你们来我家玩，玩累了就~直接睡觉，没问题的！ 
-  性别女。爱好广泛。总得来说喜欢亚撒西抒情的东西！梦中情人黑桐干也。除gal外游戏绝缘体（悲）。 家有一橘猫。现在就是龟速看书!</h3>
-      <p>
-  个人社交账号：<br>
-  email：wuxueqing2020@hotmail.com <br> 
-  bili：wxqing晴的个人空间_哔哩哔哩_bilibili <br> 
-  Twitter：Shizune。e…… (@Puv0huJzS6P44ok) / Twitter <br> 
-  </p>
-  </div>
-</div>
-
-<div class="footer">
-  <h2>归宅部工作室</h2>
-</div>
-</div>
-
-
-<div id="header">
-<div class="row">
-  <div class="side">
-      <h1>Tiffany</h1>
-      <h5>我的照片:</h5>
-      <div class="fakeimg" style="height:200px;"><img src="123.png" height='180px' width='200px' ></div>
-      <p>摸鱼担当</p>
-      
-  </div>
-  <div class="main">
-      <h2>摸鱼专员</h2>
-      <h3>哇咔咔咔咔咔 
-  记住个摸鱼担当就行 </h3>
-      <p>
-  个人社交账号：
-  未知   
-  </p>
-  </div>
-</div>
-
-<div class="footer">
-  <h2>归宅部工作室</h2>
-</div>
-</div>
-
-
-<div id="header">
-<div class="row">
-  <div class="side">
-      <h1>加拿大的鹅</h1>
-      <h5>我的照片:</h5>
-      <div class="fakeimg" style="height:200px;"><img src="123.png" height='180px' width='200px' ></div>
-      <p>打工是不可能打工的啦，这里人才又多，说话又好听</p>
-      
-  </div>
-  <div class="main">
-      <h2>后勤人员</h2>
-      <h2>公共关系</h2>
-      <h3>我叫Peter, 很多人叫我阿P和老朴（P的谐音，这个名字一度让我认为我是个韩国人）。负责工作室网页的制作与维护，在高中有丰厚的后勤服务经验（即学生会管仓库＋打杂的）兴趣爱好十分广泛，喜欢各类游戏，从20年左右开始打原神，是穿越火线与和平精英的职业赛选手（和平精英职业赛官方名称为“巅峰赛”），现在沉迷于制作各种稀奇古怪的东西。（曾经亲手设计＋打造了一辆和平精英里的蹦蹦，尽管不是100%还原） </h3>
+      <h3>
+      	Hello, this is Peter. I hope I can create a space for our go kart lover to make friend and learn from each other.
+      </h3>
 
   <p>
-  个人社交账号：<br>
+  Personal media：<br>
    Instergram: Peter Smith <br>
    Face Book:   Peter Smith <br>
    Line:   +1   437-972-8178 <br>
    What's app:   +1   437-972-8178 <br>
-   You Tube频道（英文）：Peter-D Zhou <br>
-   抖音频道（普通话）：加拿大的鹅，ID：40116164850 <br> 
-  </p>
+   You Tube Channel(English）：Peter-D Zhou <br>
+   </p>
   </div>
 </div>
 
 <div class="footer">
-  <h2>归宅部工作室</h2>
+  <h2>Go Kart lover's club</h2>
 </div>
 </div>
+	
+	<hr>
+	<font size="8" style="color: white;text-align: center;"><p><i>Click to visit my channel</i></p></font>
+    <a href="https://www.youtube.com/channel/UCEuD8VASlNj7w1zwpNDXFPw"><img src="https://miro.medium.com/max/2000/1*0mXxgWIQCki7CQxXf9drhw.jpeg" width="200" height="160"></a>
+<font id="word" style="color: blue;" onclick="document.getElementById('word').innerHTML = 'Thank you for your time.'" ><h2>Hello, welcome to my website.</h2></font>
+	</center>
+
+<script type="text/javascript">
+    function buttonFunction(){
+    var t = new Date();
+    alert(t);
+        switch(new Date().getDay()){
+      case 0:
+        alert("Tomorrow is Monnday");
+        break;
+      case 1:
+        alert("Tomorrow is Tuesday");
+        break;
+      case 2:
+        alert("Tomorrow is Wednesday");
+        break;
+      case 3:
+        alert("Tomorrow is Thursday");
+        break;
+    case 4:
+        alert("Tomorrow is Friday");
+        break;
+    case 5:
+        alert("Tomorrow is Saturday");
+        break;
+      case 6:
+        alert("Tomorrow is Sunday");  
+  }
+}
+  
+  function smallImg(x) {
+  x.style.height = "700px";
+  x.style.width = "1100px";
+}
+
+function normalImg(x) {
+  x.style.height = "900px";
+  x.style.width = "1330px";
+}
+
+function alertFunction(){
+alert("Thank you for your time.")
+}
+  </script>
+
 </body>
+
 </html>
